@@ -1,6 +1,6 @@
 <?php
 // Check for empty fields
-if(empty($_POST['name'])  		||
+ if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
    empty($_POST['phone']) 		||
    empty($_POST['message'])	||
@@ -23,6 +23,10 @@ $headers = "From: noreply@yourdomain.com\n"; // This is the email address the ge
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
 return true;			
+?> 
+
+/* mail('electriquecoding@yahoo.com','Test mail', 'The mail is function is working!');
+echo 'Mail sent!'; */
 ?>
 
 
